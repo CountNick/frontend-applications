@@ -1,0 +1,36 @@
+nav{
+    background-color: 	#00b0bf;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a{
+    text-decoration: none;;
+}
+
+a:visited,a:link{
+    color: white;
+}
+
+main{
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.continent{
+
+    background-color: 	#006bff;
+    
+}
+
+.continent h2{
+    color: white;
+}
