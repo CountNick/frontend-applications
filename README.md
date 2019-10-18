@@ -1,6 +1,12 @@
 # tropen instrumenten
 
+## Concept
+
 This app is about music instruments in het Tropenmuseum in Amsterdam. The app focuses on musicians who want some inspiration for international (classic) instruments.
+
+## How does it work?
+
+When you land on the homepage of the application you can choose a continent which you find interesting. When clicking on the continent you get a list of countries in that continent which you can click on. After clicking on a country you see instruments that originate from this country. When clicking on one of the images get the detailpage of that instrument with a picture description etc.
 
 * [View deployed version of tropen instrumenten here](https://tropeninstrumenten.herokuapp.com/continenten)
 * [Installation guide](#Installation)
