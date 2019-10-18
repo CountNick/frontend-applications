@@ -1,7 +1,10 @@
-# tropenmuseum
+# tropen instrumenten
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This app is about music instruments in het Tropenmuseum in Amsterdam. The app focuses on musicians who want some inspiration for international (classic) instruments.
+
+* [View deployed version of tropen instrumenten here](https://tropeninstrumenten.herokuapp.com/continenten)
+* [Installation guide](#Installation)
+
 
 ## Prerequisites
 
