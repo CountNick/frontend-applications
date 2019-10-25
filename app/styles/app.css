@@ -4,8 +4,9 @@
     padding: 0;
 }
 
-h1, h2, h3, li{
+h1, h2, h3, h4, li, p{
     font-family: 'Montserrat';
+    color: white;
 }
 
 nav{
@@ -45,4 +46,10 @@ main{
 .continent h2{
     text-align: center;
     color: white;
+}
+
+article{
+    margin-top: .3rem;
+    padding: 3rem;
+    background-color: #0004ff;
 }
