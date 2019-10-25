@@ -44,11 +44,15 @@ export default Route.extend({
    model() {
        console.log("het werkt!")
 
-      return fetch(url+"?query="+ encodeURIComponent(query) +"&format=json")
+      let connectionString = url+"?query="+ encodeURIComponent(query) +"&format=json";
+
+      console.log(connectionString)
+
+      return fetch(connectionString)
       .then(res => res.json())
       .then(json => {
         console.log(json)
-        let newArray = [];
+        //let dataArray = [];
 
         let bindings =  json.results.bindings
 
@@ -74,7 +78,7 @@ export default Route.extend({
           }*/
           
           
-          newArray.push(item);
+          //dataArray.push(item);
           //console.log(newArray);
         }
         console.log(bindings)
