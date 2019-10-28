@@ -3,6 +3,7 @@ import Route from '@ember/routing/route';
 const url ="https://api.data.netwerkdigitaalerfgoed.nl/datasets/ivo/NMVW/services/NMVW-36/sparql"
 //Note that the query is wrapped in es6 template strings to allow for easy copy pasting
 const query = `
+
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX dct: <http://purl.org/dc/terms/>
@@ -10,35 +11,21 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX edm: <http://www.europeana.eu/schemas/edm/>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 
-SELECT ?cho ?placeName ?title ?type ?description WHERE {
-   	<https://hdl.handle.net/20.500.11840/termmaster2> skos:narrower* ?place .
-   	?place skos:prefLabel ?placeName .
+SELECT ?cho ?title ?type ?description (SAMPLE(?img) AS ?instrumentImg) ?placeName ?continent WHERE {
+   	<https://hdl.handle.net/20.500.11840/termmaster3> skos:prefLabel* ?place .
+   	?place skos:prefLabel ?continent .
   
-  	VALUES ?type { "muziekinstrument" "strijkinstrument"}
+  VALUES ?type { "muziekinstrument" "strijkinstrument" "slaginstrument"}
   
-  	?cho dct:spatial ?place;
+  ?cho dct:spatial ?placeName;
     dc:type ?type;
     dc:title ?title;
-    dc:description ?description;
-    edm:isShownBy ?picture.
- 
+  	dc:description ?description;
+  	edm:isShownBy ?img
+  FILTER langMatches(lang(?title), "ned")
 }
+
 `
-/*runQuery(url, query)
-
-function runQuery(url, query){
-  //Test if the endpoint is up and print result to page 
-  // (you can improve this script by making the next part of this function wait for a succesful result)
-  fetch(url)
-    .then(res => console.log("Status of API: " + res.status))
-	// Call the url with the query attached, output data
-	fetch(url+"?query="+ encodeURIComponent(query) +"&format=json")
-	.then(res => res.json())
-	.then(json => {
-  console.log(json.results.bindings)
-	})
-}*/
-
 
 export default Route.extend({
 
@@ -60,16 +47,18 @@ export default Route.extend({
 
         //console.log(bindings)
 
-        for (var i=0; i < bindings.length; i++){
+        for (let i=0; i < bindings.length; i++){
+          //puts every binding in item variable
           let item = bindings[i]
           //console.log(item)
           
           item.cho = item.cho.value
+          item.continent = item.continent.value
           item.placeName = item.placeName.value
           item.title = item.title.value
           item.type = item.type.value
           item.description = item.description.value
-          item.picture = "picture"
+          item.img = item.instrumentImg.value
           /*let newItemObject = {
             item.cho: item.cho.value,
             item.placeName: item.placeName.value,
@@ -79,9 +68,10 @@ export default Route.extend({
             item.picture: item.picture.value
           }*/
           
+
           
           //dataArray.push(item);
-          //console.log(newArray);
+          //console.log(dataArray);
         }
         console.log(bindings)
         return bindings

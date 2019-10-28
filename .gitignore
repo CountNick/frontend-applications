@@ -18,6 +18,8 @@
 /npm-debug.log*
 /testem.log
 /yarn-error.log
+.DS_Store
+app/.DS_Store
 
 # ember-try
 /.node_modules.ember-try/
