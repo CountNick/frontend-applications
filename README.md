@@ -1,3 +1,4 @@
+[![Tropen Instrumenten](https://i.imgur.com/nDx1jd5.png)]
 # tropen instrumenten
 
 ## Concept
