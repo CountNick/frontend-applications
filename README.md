@@ -13,15 +13,18 @@
 
 This app is about music instruments in het Tropenmuseum in Amsterdam. The app focuses on musicians who want some inspiration for international (classic) instruments. When users enter the website they are greeted with a worldmap where they can choose a continent they find interesting. 
 
-*Continents page*:palm_tree:
-![HomePage](https://i.imgur.com/xzi1hnj.png)
+*_Continents page_*
+![HomePage](https://i.imgur.com/xcYUbTS.png)
 
 After clicking on the continent the user is able to click on one of the regions in this continent.
 
-*Africa page*:palm_tree:
-![Africa](https://i.imgur.com/GrIYGMN.png)
+*_Africa page_*
+![Africa](https://i.imgur.com/JWjPluH.png)
 
 After clicking on the region the places in this specific region are shown.
+
+*_Uganda page_*
+![Uganda](https://i.imgur.com/3IH62mI.png)
 
 When the user clicks on on of these places they get to see images of music instruments that are from this specific place. 
 
