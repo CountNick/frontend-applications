@@ -30,12 +30,12 @@ After clicking on the region the places in this specific region are shown.
 Now the images will load with an reference to the place the instrument originates from.
 
 *_Instruments page_*
-![Instrumenten](https://i.imgur.com/sctC1wp.png)
+![Instrumenten](https://i.imgur.com/AbxVDjg.png)
 
 Upon licking on one of the images the instrument image expands with additional information about the specific instrument. Here users can find information about the instrument like the name, place of origin, a image and it's even possible to listen to the sounds the instruments make. Which makes it gret for artists looking for inspiration.
 
 *_Instrumetens detail page_*
-![Detail](https://i.imgur.com/QeO7RMG.png)
+![Detail](https://i.imgur.com/fFrlfrR.png)
 
 ## How does it work?:palm_tree:
 
