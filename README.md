@@ -4,14 +4,15 @@
 
 ## Contents
 
-* ### [Concept](#Concept):palm_tree:
-* ### [How does it work?](#"How-does-it-work?"):palm_tree:
-* ### [Fetching data](#"Fetching-data"):palm_tree:
-* ### [Installation](#Installation):palm_tree:
+* ### [Concept](#Concept)
+* ### [How does it work?](#"How-does-it-work?")
+* ### [Fetching data](#"Fetching-data")
+* ### [Installation](#Installation)
+* ### [Check out live version here](https://tropeninstrumenten.herokuapp.com/continenten)
 
 ## Concept:palm_tree:
 
-This app is about music instruments in het Tropenmuseum in Amsterdam. The app focuses on musicians who want some inspiration for international (classic) instruments. When users enter the website they are greeted with a worldmap where they can choose a continent they find interesting. 
+This app is about music instruments in het Tropenmuseum in Amsterdam. The app focuses on musicians in search of inspiration. When users enter the website they are greeted with a worldmap where they can choose a continent they find interesting. 
 
 *_Continents page_*
 ![HomePage](https://i.imgur.com/xcYUbTS.png)
@@ -26,9 +27,15 @@ After clicking on the region the places in this specific region are shown.
 *_Uganda page_*
 ![Uganda](https://i.imgur.com/3IH62mI.png)
 
-When the user clicks on on of these places they get to see images of music instruments that are from this specific place. 
+Now the images will load with an reference to the place the instrument originates from.
 
-Upon licking on one of the images the instrument image expands with additional information about the specific instrument.
+*_Instruments page_*
+![Instrumenten](https://i.imgur.com/Sq4JLKI.png)
+
+Upon licking on one of the images the instrument image expands with additional information about the specific instrument. Here users can find information about the instrument like the name, place of origin, a image and it's even possible to listen to the sounds the instruments make. Which makes it gret for artists looking for inspiration.
+
+*_Instrumetens detail page_*
+![Detail](https://i.imgur.com/QeO7RMG.png)
 
 ## How does it work?:palm_tree:
 
@@ -66,9 +73,6 @@ FILTER langMatches(lang(?title), "ned")
 }
 
 ```
-
-* [View deployed version of tropen instrumenten here](https://tropeninstrumenten.herokuapp.com/continenten)
-* [Installation guide](#Installation)
 
 
 
