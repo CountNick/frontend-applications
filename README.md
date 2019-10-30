@@ -2,9 +2,26 @@
 
 ![Tropen Instrumenten](https://i.imgur.com/nDx1jd5.png)
 
+## Contents
+
+* ### [Concept](#Concept)
+* ### [How does it work?](#How does is work?)
+* ### [Fetching data](#Fetching data)
+* ### [Installation](#Installation)
+
 ## Concept
 
-This app is about music instruments in het Tropenmuseum in Amsterdam. The app focuses on musicians who want some inspiration for international (classic) instruments.
+This app is about music instruments in het Tropenmuseum in Amsterdam. The app focuses on musicians who want some inspiration for international (classic) instruments. When users enter the website they are greeted with a worldmap where they can choose a continent they find interesting. 
+
+![HomePage](https://i.imgur.com/WyfvqeF.png)
+
+After clicking on the continent the user is able to click on one of the regions in this continent. 
+
+After clicking on the region the places in this specific region are shown.
+
+When the user clicks on on of these places they get to see images of music instruments that are from this specific place. 
+
+Upon licking on one of the images the instrument image expands with additional information about the specific instrument.
 
 ## How does it work?
 
