@@ -6,7 +6,7 @@
 
 * ### [Concept](#Concept):palm_tree:
 * ### [How does it work?](#"How does is work?"):palm_tree:
-* ### [Fetching data](#"Fetching data"):palm_tree:
+* ### [Fetching data](#"Fetching-data"):palm_tree:
 * ### [Installation](#Installation):palm_tree:
 
 ## Concept:palm_tree:
