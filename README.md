@@ -14,7 +14,7 @@ When you land on the homepage of the application you can choose a continent whic
 
 The app fetches queries for each continent, the region the object comes from, the placename, type of instrument, and the imagelink of an object.
 
-`
+```
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX dct: <http://purl.org/dc/terms/>
@@ -41,7 +41,7 @@ VALUES ?type { "muziekinstrument" "strijkinstrument" "slaginstrument" "blaasinst
 FILTER langMatches(lang(?title), "ned")
 }
 
-`
+```
 
 * [View deployed version of tropen instrumenten here](https://tropeninstrumenten.herokuapp.com/continenten)
 * [Installation guide](#Installation)
