@@ -1,18 +1,19 @@
-# tropen instrumenten
+# :palm_tree:Tropen instrumenten:palm_tree:
 
 ![Tropen Instrumenten](https://i.imgur.com/nDx1jd5.png)
 
 ## Contents
 
-* ### [Concept](#Concept)
-* ### [How does it work?](#How does is work?)
-* ### [Fetching data](#Fetching data)
-* ### [Installation](#Installation)
+* ### [Concept](#Concept):palm_tree:
+* ### [How does it work?](#"How does is work?"):palm_tree:
+* ### [Fetching data](#"Fetching data"):palm_tree:
+* ### [Installation](#Installation):palm_tree:
 
-## Concept
+## Concept:palm_tree:
 
 This app is about music instruments in het Tropenmuseum in Amsterdam. The app focuses on musicians who want some inspiration for international (classic) instruments. When users enter the website they are greeted with a worldmap where they can choose a continent they find interesting. 
 
+*Continents page*:palm_tree:
 ![HomePage](https://i.imgur.com/xzi1hnj.png)
 
 After clicking on the continent the user is able to click on one of the regions in this continent. 
@@ -23,11 +24,11 @@ When the user clicks on on of these places they get to see images of music instr
 
 Upon licking on one of the images the instrument image expands with additional information about the specific instrument.
 
-## How does it work?
+## How does it work?:palm_tree:
 
 When you land on the homepage of the application you can choose a continent which you find interesting. When clicking on the continent you get a list of countries in that continent which you can click on. After clicking on a country you see instruments that originate from this country. When clicking on one of the images get the detailpage of that instrument with a picture description etc.
 
-### Fetching data
+### Fetching data:palm_tree:
 
 The app fetches queries for each continent, the region the object comes from, the placename, type of instrument, and the imagelink of an object.
 
@@ -74,7 +75,7 @@ You will need the following things properly installed on your computer.
 * [Ember CLI](https://ember-cli.com/)
 * [Google Chrome](https://google.com/chrome/)
 
-## Installation
+## Installation:cd:
 
 * `git clone <repository-url>` this repository
 * `cd tropenmuseum`
