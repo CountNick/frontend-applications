@@ -7,8 +7,11 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
-  this.route('instruments');
-  this.route('continents');
+  this.route('instrument-list');
+  this.route('continent-list');
+  this.route('region-list');
+  this.route('region');
+  this.route('places-list');
 });
 
 export default Router;
