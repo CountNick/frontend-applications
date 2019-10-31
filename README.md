@@ -5,8 +5,9 @@
 ## Contents
 
 * ### [Concept](#Concept)
-* ### [How does it work?](#"How-does-it-work?")
-* ### [Fetching data](#"Fetching-data")
+* ### [How does it work?](#How-does-it-work?)
+* ### [Sitemap](#Sitemap)
+* ### [Fetching data](#Fetching-data)
 * ### [Installation](#Installation)
 * ### [Check out live version here](https://tropeninstrumenten.herokuapp.com/continenten)
 * ### [Read about my process in the project wiki](https://github.com/CountNick/frontend-applications/wiki)
@@ -15,7 +16,11 @@
 
 This app is about music instruments in het Tropenmuseum in Amsterdam. The app focuses on musicians in search of inspiration. When users enter the website they are greeted with a worldmap where they can choose a continent they find interesting. 
 
-*_Continents page_*
+## How does it work?:palm_tree:
+
+When you land on the homepage of the application you can choose a continent which you find interesting. When clicking on the continent you get a list of countries in that continent which you can click on. After clicking on a country you see instruments that originate from this country. When clicking on one of the images get the detailpage of that instrument with a picture description etc.
+
+#### *_Continents page_*
 ![HomePage](https://i.imgur.com/xcYUbTS.png)
 
 After clicking on the continent the user is able to click on one of the regions in this continent.
@@ -38,11 +43,11 @@ Upon licking on one of the images the instrument image expands with additional i
 #### *_Instrumetens detail page_*
 ![Detail](https://i.imgur.com/fFrlfrR.png)
 
-## How does it work?:palm_tree:
+## Sitemap
 
-When you land on the homepage of the application you can choose a continent which you find interesting. When clicking on the continent you get a list of countries in that continent which you can click on. After clicking on a country you see instruments that originate from this country. When clicking on one of the images get the detailpage of that instrument with a picture description etc.
+![Sitemap](https://i.imgur.com/aIiBuVY.png)
 
-### Fetching data:palm_tree:
+## Fetching data:palm_tree:
 
 The app fetches queries for each continent, the region the object comes from, the placename, type of instrument, and the imagelink of an object.
 
