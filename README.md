@@ -9,6 +9,7 @@
 * ### [Fetching data](#"Fetching-data")
 * ### [Installation](#Installation)
 * ### [Check out live version here](https://tropeninstrumenten.herokuapp.com/continenten)
+* ### [Read about my process in the project wiki](https://github.com/CountNick/frontend-applications/wiki)
 
 ## Concept:palm_tree:
 
