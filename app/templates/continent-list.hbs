@@ -4,12 +4,12 @@
 
 {{#each model as |continent|}}
 
-
+{{#link-to "region-list"}}
 <article class="continent">
 <h2>{{continent.title}}</h2>
 </article>
+{{/link-to}}
 {{/each}}
 
-{{outlet}}
 
 </main>
