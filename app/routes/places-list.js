@@ -66,8 +66,13 @@ export default Route.extend({
           item.description = item.firstDescription.value
           item.img = item.instrumentImg.value
 
+          console.log(item.placeName);
         }
-        console.log(bindings)
+        
+        
+
+        
+
         return bindings
 
          //console.log(newArray);

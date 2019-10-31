@@ -67,10 +67,8 @@ export default Route.extend({
           item.img = item.instrumentImg.value  
 
         }
-        console.log(bindings)
-        return bindings
 
-         //console.log(newArray);
+
        
        })
     }

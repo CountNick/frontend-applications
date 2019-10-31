@@ -45,7 +45,7 @@ export default Route.extend({
       return fetch(connectionString)
       .then(res => res.json())
       .then(json => {
-        console.log(json)
+        //console.log(json)
         //let dataArray = [];
 
         let bindings =  json.results.bindings
@@ -66,15 +66,37 @@ export default Route.extend({
           item.description = item.firstDescription.value
           item.img = item.instrumentImg.value  
 
+
+          let filterRegion = bindings.filter( function (binding) {
+
+            if (binding.region == "Zuidelijk Afrika"){
+               console.log(binding)
+            }
+    
+             else if(bindings.region === "Centraal-Afrika"){
+              console.log(binding)
+             }
+    
+             else if(bindings.region === "West-Afrika"){
+              console.log(binding)
+             }
+  
+              
+  
+          });
+            console.log("filter",filterRegion)
         }
-        console.log(bindings)
+
+
+
+        
+        //console.log(bindings);
+
+        //console.log(bindings)
         return bindings
 
          //console.log(newArray);
        
        })
     }
-
-    
-
-});
+  });
