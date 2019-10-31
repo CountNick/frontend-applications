@@ -58,3 +58,8 @@ article{
 article img{
     width: 30%;
 }
+
+.loading{
+    color: black;
+    text-align: center;
+}
