@@ -5,43 +5,49 @@
 ## Contents
 
 * ### [Concept](#Concept)
-* ### [How does it work?](#"How-does-it-work?")
-* ### [Fetching data](#"Fetching-data")
+* ### [How does it work?](#How-does-it-work?)
+* ### [Sitemap](#Sitemap)
+* ### [Fetching data](#Fetching-data)
 * ### [Installation](#Installation)
 * ### [Check out live version here](https://tropeninstrumenten.herokuapp.com/continenten)
+* ### [Read about my process in the project wiki](https://github.com/CountNick/frontend-applications/wiki)
 
 ## Concept:palm_tree:
 
 This app is about music instruments in het Tropenmuseum in Amsterdam. The app focuses on musicians in search of inspiration. When users enter the website they are greeted with a worldmap where they can choose a continent they find interesting. 
 
-*_Continents page_*
-![HomePage](https://i.imgur.com/xcYUbTS.png)
-
-After clicking on the continent the user is able to click on one of the regions in this continent.
-
-*_Africa page_*
-![Africa](https://i.imgur.com/FKjxO2v.png)
-
-After clicking on the region the places in this specific region are shown.
-
-*_Uganda page_*
-![Uganda](https://i.imgur.com/N2Y4zbd.png)
-
-Now the images will load with an reference to the place the instrument originates from.
-
-*_Instruments page_*
-![Instrumenten](https://i.imgur.com/AbxVDjg.png)
-
-Upon licking on one of the images the instrument image expands with additional information about the specific instrument. Here users can find information about the instrument like the name, place of origin, a image and it's even possible to listen to the sounds the instruments make. Which makes it gret for artists looking for inspiration.
-
-*_Instrumetens detail page_*
-![Detail](https://i.imgur.com/fFrlfrR.png)
-
 ## How does it work?:palm_tree:
 
 When you land on the homepage of the application you can choose a continent which you find interesting. When clicking on the continent you get a list of countries in that continent which you can click on. After clicking on a country you see instruments that originate from this country. When clicking on one of the images get the detailpage of that instrument with a picture description etc.
 
-### Fetching data:palm_tree:
+#### *_Continents page_*
+![HomePage](https://i.imgur.com/xcYUbTS.png)
+
+After clicking on the continent the user is able to click on one of the regions in this continent.
+
+#### *_Africa page_*
+![Africa](https://i.imgur.com/FKjxO2v.png)
+
+After clicking on the region the places in this specific region are shown.
+
+#### *_Uganda page_*
+![Uganda](https://i.imgur.com/N2Y4zbd.png)
+
+Now the images will load with an reference to the place the instrument originates from.
+
+#### *_Instruments page_*
+![Instrumenten](https://i.imgur.com/AbxVDjg.png)
+
+Upon licking on one of the images the instrument image expands with additional information about the specific instrument. Here users can find information about the instrument like the name, place of origin, a image and it's even possible to listen to the sounds the instruments make. Which makes it gret for artists looking for inspiration.
+
+#### *_Instrumetens detail page_*
+![Detail](https://i.imgur.com/fFrlfrR.png)
+
+## Sitemap
+
+![Sitemap](https://i.imgur.com/aIiBuVY.png)
+
+## Fetching data:palm_tree:
 
 The app fetches queries for each continent, the region the object comes from, the placename, type of instrument, and the imagelink of an object.
 
