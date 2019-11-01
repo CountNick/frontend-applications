@@ -35,18 +35,13 @@ FILTER langMatches(lang(?title), "ned")
 export default Route.extend({
 
    model() {
-      //console.log("het werkt!")
 
       const connectionString = url+"?query="+ encodeURIComponent(query) +"&format=json";
 
-      //console.log(connectionString)
-
-
       return fetch(connectionString)
-      .then(res => res.json())
-      .then(json => {
+        .then(res => res.json())
+        .then(json => {
         //console.log(json)
-        //let dataArray = [];
 
         let bindings =  json.results.bindings
 
@@ -65,13 +60,9 @@ export default Route.extend({
           item.img = item.instrumentImg.value  
 
         }        
-        //console.log(bindings);
 
-        //console.log(bindings)
+        //returns the bindings so they can be used in the component
         return bindings
-
-         //console.log(newArray);
-       
        })
     }
   });

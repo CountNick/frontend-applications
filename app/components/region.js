@@ -8,17 +8,16 @@ export default Component.extend({
         click(){
             this.router.transitionTo('places-list')
 
-            if(this.region.region === "Zuidelijk Afrika"){
-                //console.log(this.region)
-            }
+                if(this.region.region === "Zuidelijk Afrika"){
+                    //console.log(this.region)
+                }
 
-            else if(this.region.region === "Centraal-Afrika"){
-                //console.log(this.region.placeName)
-            }
+                else if(this.region.region === "Centraal-Afrika"){
+                    //console.log(this.region.placeName)
+                }
 
-            else if(this.region.region === "West-Afrika"){
-                //console.log(this.region.placeName)
+                else if(this.region.region === "West-Afrika"){
+                    //console.log(this.region.placeName)
+                }
             }
-        }
-    
-});
+    });

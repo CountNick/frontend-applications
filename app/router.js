@@ -9,9 +9,7 @@ const Router = EmberRouter.extend({
 Router.map(function() {
   this.route('instrument-list');
   this.route('continent-list');
-  this.route('region-list', function(){
-    this.route('region')
-  });
+  this.route('region-list');
   this.route('region');
   this.route('places-list');
 });

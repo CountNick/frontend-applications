@@ -41,13 +41,11 @@ export default Route.extend({
       
       //Got this piece of fetch code from Laurens' example at: https://codepen.io/Razpudding/pen/LKMbwZ 
       const connectionString = url+"?query="+ encodeURIComponent(query) +"&format=json";
-
       
       return fetch(connectionString)
-      .then(response => response.json())
-      .then(json => {
+        .then(response => response.json())
+        .then(json => {
         //console.log(json)
-        //let dataArray = [];
 
         //puts the bindings array in a new bindings variable
         let bindings =  json.results.bindings
@@ -72,12 +70,6 @@ export default Route.extend({
 
         //returns the bindings so they can be used in the component
         return bindings
-
-         //console.log(newArray);
-       
        })
     }
-
-    
-
 });
