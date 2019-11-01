@@ -60,9 +60,14 @@ article img{
 }
 
 .loading{
-    color: black;
+    
     text-align: center;
 }
+
+.loading h1{
+    color: black;
+}
+
 
 .lds-ellipsis {
     display: inline-block;
