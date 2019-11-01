@@ -46,7 +46,7 @@ export default Route.extend({
       return fetch(connectionString)
       .then(response => response.json())
       .then(json => {
-        console.log(json)
+        //console.log(json)
         //let dataArray = [];
 
         //puts the bindings array in a new bindings variable
@@ -68,7 +68,7 @@ export default Route.extend({
           item.img = item.instrumentImg.value
 
         }
-        console.log(bindings)
+        //console.log(bindings)
 
         //returns the bindings so they can be used in the component
         return bindings
