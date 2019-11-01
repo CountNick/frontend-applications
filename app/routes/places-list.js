@@ -1,7 +1,9 @@
 import Route from '@ember/routing/route';
 
+//Got this piece of fetch code from Laurens' example at: https://codepen.io/Razpudding/pen/LKMbwZ 
+//puts the endpoint in a variable
 const url ="https://api.data.netwerkdigitaalerfgoed.nl/datasets/ivo/NMVW/services/NMVW-36/sparql"
-//Note that the query is wrapped in es6 template strings to allow for easy copy pasting
+//puts the SPARQL query in a variable
 const query = `
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -34,30 +36,29 @@ FILTER langMatches(lang(?title), "ned")
 
 export default Route.extend({
 
+  //model hook returns the fetched data to the instrument component, resource used: https://guides.emberjs.com/release/routing/specifying-a-routes-model/
    model() {
-      //console.log("het werkt!")
-
+      
+      //Got this piece of fetch code from Laurens' example at: https://codepen.io/Razpudding/pen/LKMbwZ 
       const connectionString = url+"?query="+ encodeURIComponent(query) +"&format=json";
 
-      //console.log(connectionString)
-
-
+      
       return fetch(connectionString)
-      .then(res => res.json())
+      .then(response => response.json())
       .then(json => {
         console.log(json)
         //let dataArray = [];
 
+        //puts the bindings array in a new bindings variable
         let bindings =  json.results.bindings
 
-        //console.log(bindings)
-
+        //loops through the bindings array
         for (let i=0; i < bindings.length; i++){
           //puts every binding in item variable
           let item = bindings[i]
           //console.log(item)
           
-          item.region_id = i;
+          //gives every object value a new name, makes it easier to call upon from template
           item.cho = item.cho.value
           item.continent = item.continent.value
           item.placeName = item.placeName.value
@@ -66,13 +67,10 @@ export default Route.extend({
           item.description = item.firstDescription.value
           item.img = item.instrumentImg.value
 
-          console.log(item.placeName);
         }
-        
-        
+        console.log(bindings)
 
-        
-
+        //returns the bindings so they can be used in the component
         return bindings
 
          //console.log(newArray);
@@ -83,4 +81,3 @@ export default Route.extend({
     
 
 });
-

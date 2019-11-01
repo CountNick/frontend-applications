@@ -1,7 +1,7 @@
 import Route from '@ember/routing/route';
 
 const url ="https://api.data.netwerkdigitaalerfgoed.nl/datasets/ivo/NMVW/services/NMVW-36/sparql"
-//Note that the query is wrapped in es6 template strings to allow for easy copy pasting
+
 const query = `
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -50,8 +50,6 @@ export default Route.extend({
 
         let bindings =  json.results.bindings
 
-
-
         for (let i=0; i < bindings.length; i++){
           //puts every binding in item variable
           let item = bindings[i]
@@ -66,30 +64,7 @@ export default Route.extend({
           item.description = item.firstDescription.value
           item.img = item.instrumentImg.value  
 
-
-          let filterRegion = bindings.filter( function (binding) {
-
-            if (binding.region == "Zuidelijk Afrika"){
-               console.log(binding)
-            }
-    
-             else if(bindings.region === "Centraal-Afrika"){
-              console.log(binding)
-             }
-    
-             else if(bindings.region === "West-Afrika"){
-              console.log(binding)
-             }
-  
-              
-  
-          });
-            console.log("filter",filterRegion)
-        }
-
-
-
-        
+        }        
         //console.log(bindings);
 
         //console.log(bindings)

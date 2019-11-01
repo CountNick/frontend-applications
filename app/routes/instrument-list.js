@@ -1,5 +1,6 @@
 import Route from '@ember/routing/route';
 
+//Got this piece of fetch code from Laurens' example at: https://codepen.io/Razpudding/pen/LKMbwZ 
 //puts the endpoint in a variable
 const url ="https://api.data.netwerkdigitaalerfgoed.nl/datasets/ivo/NMVW/services/NMVW-36/sparql"
 //puts the SPARQL query in a variable
@@ -35,7 +36,7 @@ FILTER langMatches(lang(?title), "ned")
 
 export default Route.extend({
 
-  //model hook returns the fetched data to the instrument component, resource used: 
+  //model hook returns the fetched data to the instrument component, resource used: https://guides.emberjs.com/release/routing/specifying-a-routes-model/
    model() {
       
       //Got this piece of fetch code from Laurens' example at: https://codepen.io/Razpudding/pen/LKMbwZ 
