@@ -93,6 +93,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation:cd:
 
+* First make sure you install the Ember CLI: `npm install -g ember-cli`
 * `git clone <repository-url>` this repository
 * `cd tropenmuseum`
 * `npm install`
